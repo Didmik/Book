@@ -1,24 +1,46 @@
-let myBooks = [];
+
+
+let addNewBookButton = document.querySelector(".addBook");
+
+addNewBookButton.addEventListener("click", () => {
+    
+});
+
+
+let myLibrary = [];
+
 
 function Book(title, author, pages, status) {
   this.title = title;
   this.author = author;
   this.pages = pages;
-  this.status = status
+  this.status = status;
 }
 
 
-function addBookToLibrary(book) {
-    myBooks.push(book);
+function addBookToLibrary(title, author, pages, status) {
+   const book = new Book(title, author, pages, status);
+    myLibrary.push(book);
+
+    
  
 }
 
-addBookToLibrary("LotR");
+
+addBookToLibrary("LotR", "Tolkien", "500", "read");
+addBookToLibrary("Harry Potter", "Rowling", "400", "unread");
 
 
-//console.table(myBooks);
+console.table(myLibrary);
+
+function displayBooks() {
 
 
-for (let book in myBooks) {
-    console.table(book);
+for (let book in myLibrary) {
+    console.log(book);
 }
+
+}
+
+
+

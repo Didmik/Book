@@ -3,6 +3,51 @@
     flex-direction: column;
     align-items: center;
 }
+
+.addBook {
+    margin-bottom: 20px;
+}
+
+.bookTable {
+    border: solid 1px black;
+    margin-bottom: 20px;
+}
+
+
+.tableHeader {
+    background: lightblue;
+    padding: 30px;
+}
+
+th {
+    padding: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newBook {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+#title, #author, #pages {
+    margin-bottom: 15px;
+}
+
+#reading {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+#submit {
+    width: 80px;
+}
      
 
 
