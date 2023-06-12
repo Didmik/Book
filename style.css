@@ -11,6 +11,7 @@
 .bookTable {
     border: solid 1px black;
     margin-bottom: 20px;
+    width: 600px;
 }
 
 
@@ -29,11 +30,33 @@ th {
     gap: 10px;
 }
 
+.popUp {
+    display: none; 
+    position: fixed; 
+    top: 15rem;
+    background: lightgray;
+    opacity: 0.9;
+}
+
 .newBook {
     display: flex;
     flex-direction: column;
     padding: 10px;
     
+}
+
+.close {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.close:hover, .close:active {
+    color: blue;
+    cursor: pointer;
 }
 
 #title, #author, #pages {
@@ -47,6 +70,14 @@ th {
 
 #submit {
     width: 80px;
+}
+
+
+.deleteButton {
+    background: red;
+    color: white;
+    border-radius: 10px;
+    
 }
      
 
