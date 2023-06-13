@@ -4,8 +4,16 @@
     align-items: center;
 }
 
-.addBook {
+.addBookButton {
     margin-bottom: 20px;
+    border-radius: 10px;
+    background: rgb(72, 87, 87);
+    color: white;
+}
+
+.addBookButton:hover, .addBookButton:active {
+    color: lightblue;
+    cursor: pointer;
 }
 
 .bookTable {
@@ -72,12 +80,24 @@ th {
     width: 80px;
 }
 
-
 .deleteButton {
     background: red;
     color: white;
     border-radius: 10px;
-    
+}
+
+.deleteButton:hover, .deleteButton:active {
+    color: blue;
+    cursor: pointer;
+}
+
+.statusButton {
+    border-radius: 10px; 
+}
+
+.statusButton:hover, .statusButton:active {
+    color: lightblue;
+    cursor: pointer;
 }
      
 
